@@ -30,6 +30,7 @@ h1 {
 }
 
 #logo {
+    margin: 8% 0 0 0;
     font-size: 8em;
 }
 
@@ -44,9 +45,11 @@ h1 {
 
 #v1 {
     color: white;
-    background-image: url(/assets/img/date5.jpg);
+    /* local url for use on local servers */
+    /* background-image: url(/assets/img/date5.jpg);  */
+    background-image: url(../img/date5.jpg); /* github pages url - use this for deployment - the path is an issue */
     background-size: cover;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     transition: 2s;
 }
