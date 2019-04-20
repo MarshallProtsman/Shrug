@@ -34,14 +34,29 @@ googlefonts - font library
 - Google Maps integration (distance from event to restaurant is already here - we want advanced functionality like showing the map and directions)
 - Advanced animations/transitions and a smoother UI (android-like) - css keyframes and/or anime.js
 - Rotating background imgs (close but couldn't quite get it working)    
+- Social component > can users have a swiping/dating app and then plan dates using our app as the next step?  Props to Sam for that idea
 
-github link: 
-github pages link: 
+github link: https://github.com/jrobs87/group_5_project_1 
+github pages link:  https://jrobs87.github.io/group_5_project_1/
+
 ====================================================================================
 
 # Application Flow and Features
-
-- fill in dood!
+- App is a psuedo SPA, with views managed via jquery dom manipulation.
+- Event listeners hide and reveal content to guide the user thru the app while updating common variables and making API calls in the background
+- The App functions as follows:
+    a. Ping users ip address and bounce it off of ipdata.io to get the city location
+        i. user can change the city - validation is done by bouncing the input off of an array of major US cities
+    b. Feed the city to the ticketmaster API and use search params to filter events in the users city
+        i. Each category button refreshes the keyword 
+        ii. Each category button calls the ticketmaster API with the new keyword and re-renders the event cards
+        iii. Event array response from ticketmaster is stored in a global variable for access on the summary page
+    c. Once the user selects an event, the location of the event (lat and long coordinates) are fed to the Yelp API
+        i. This narrows down the search to super local (radius around the event)
+        ii. Results are populated automatically on the view change.
+        iii. Restaurant API response is stored for later use along with user selection
+        iv. Restaurant selection is pushed to Firebase to use later in a favorites/popular list
+    d. Summary page displays both user selections (event and restaurant)
 
 
 
