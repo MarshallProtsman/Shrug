@@ -20,14 +20,6 @@ $(document).ready(function () {
 
   $('.modal').modal(); // intializing modals
 
-  let pictures = ['/assets/img/date1.jpg', '/assets/img/date2.jpg', '/assets/img/date3.jpg'];
-  
-  // for (z = 0; z < pictures.length; z++) {
-  //   console.log(pictures.length)
-  //   setInterval(function() {
-  //     $('#v1').css('background-image', 'url(' + pictures[z] + ')');
-  //   },2000);
-  // };
   /* ----------------------------------------------------------------------------------- */
   // --------------------------------- FIRE FIRE FIRE ---------------------------------- //
   /* ----------------------------------------------------------------------------------- */

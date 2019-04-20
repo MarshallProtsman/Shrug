@@ -101,6 +101,11 @@ h1 {
     bottom: 1em;
 }
 
+/* #city-error {
+    background: lightcoral;
+    color: white;
+} */
+
 #city-name {
     padding: 0 0 2em 0;
 }
